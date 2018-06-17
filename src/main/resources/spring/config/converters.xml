@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- * converters.xml * * Copyright (C) 2017 Universidad de Sevilla * * The 
+	use of this project is hereby constrained to the conditions of the * TDG 
+	Licence, a copy of which you may download from * http://www.tdg-seville.info/License.html -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd		
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd		
+	">
+
+	<util:list id="converters">
+		<bean class="converters.ActorToStringConverter" />
+		<bean class="converters.AdministratorToStringConverter" />
+		<bean class="converters.ArticleToStringConverter" />
+		<bean class="converters.ChirpToStringConverter" />
+		<bean class="converters.CustomerToStringConverter" />
+		<bean class="converters.TabooWordToStringConverter" />
+		<bean class="converters.FollowupToStringConverter" />
+		<bean class="converters.NewspaperToStringConverter" />
+		<bean class="converters.SubscriptionToStringConverter" />
+		<bean class="converters.UserToStringConverter" />
+
+		<bean class="converters.StringToActorConverter" />
+		<bean class="converters.StringToAdministratorConverter" />
+		<bean class="converters.StringToArticleConverter" />
+		<bean class="converters.StringToChirpConverter" />
+		<bean class="converters.StringToCustomerConverter" />
+		<bean class="converters.StringToTabooWordConverter" />
+		<bean class="converters.StringToFollowupConverter" />
+		<bean class="converters.StringToNewspaperConverter" />
+		<bean class="converters.StringToSubscriptionConverter" />
+		<bean class="converters.StringToUserConverter" />
+		
+		
+		<bean class="converters.AgentToStringConverter" />
+		<bean class="converters.StringToAgentConverter" />
+		
+		<bean class="converters.MyMessageToStringConverter" />
+		<bean class="converters.StringToMyMessageConverter" />
+		
+		<bean class="converters.FolderToStringConverter" />
+		<bean class="converters.StringToFolderConverter" />
+		
+		<bean class="converters.VolumeToStringConverter" />
+		<bean class="converters.StringToVolumeConverter" />
+		
+		<bean class="converters.VSubscriptionToStringConverter" />
+		<bean class="converters.StringToVSubscriptionConverter" />		
+		
+
+	</util:list>
+
+</beans>

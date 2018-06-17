@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- * tiles.xml * Copyright (C) 2017 Universidad de Sevilla * Author (A) 
+	2012 Rafael Corchuelo (corchu@us.es) * * The use of this project is hereby 
+	constrained to the conditions of the * TDG Licence, a copy of which you may 
+	download from * http://www.tdg-seville.info/License.html -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="newspaper/user/editForm" extends="master.page">
+		<put-attribute name="title" value="Edit Newspaper" />
+		<put-attribute name="body" value="/views/newspaper/editForm.jsp" />
+	</definition>
+	<definition name="newspaper/user/create" extends="master.page">
+		<put-attribute name="title" value="Create Newspaper" />
+		<put-attribute name="body" value="/views/newspaper/edit.jsp" />
+	</definition>
+
+	<definition name="newspaper/user/list" extends="master.page">
+		<put-attribute name="title" value="My newspapers" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+
+	<definition name="newspaper/customer/list" extends="master.page">
+		<put-attribute name="title" value="Private newspapers" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+
+	<definition name="newspaper/search" extends="master.page">
+		<put-attribute name="title" value="Search of newspapers" />
+		<put-attribute name="body" value="/views/newspaper/search.jsp" />
+	</definition>
+
+	<definition name="newspaper/searchResult" extends="master.page">
+		<put-attribute name="title" value="Result search of newspapers" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+
+	<definition name="newspaper/list" extends="master.page">
+		<put-attribute name="title" value="Newspaper List" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+
+	<definition name="newspaper/display" extends="master.page">
+		<put-attribute name="title" value="Display Newspaper" />
+		<put-attribute name="body" value="/views/newspaper/display.jsp" />
+	</definition>
+	
+	<definition name="newspaper/agent/listAdvertisement" extends="master.page">
+		<put-attribute name="title" value="Newspapers with advertisements" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+	
+	<definition name="newspaper/agent/list" extends="master.page">
+		<put-attribute name="title" value="Newspapers without advertisements" />
+		<put-attribute name="body" value="/views/newspaper/list.jsp" />
+	</definition>
+
+</tiles-definitions>
